@@ -79,13 +79,11 @@ Create a function called printListItems that has one parameter.
 Inside the function loop through the value passed in and log each item.
 Call the function and pass the sports array in script.js in as the argument.*/
 
-function printListItems(list) {
-
-    for (let i = 0; i < list.length; i++)
+function printListItems(list){
+{ for (let i = 0; i < list.length; i++)
     
-    console.log(list.length[i]);
-
-}
+    console.log(list[i]);
+}}
 
 printListItems(sports);
 
@@ -94,3 +92,13 @@ Create a function called createGames that has one parameter.
 Inside the function loop through the value passed in, create HTML for each property in each object and return the HTML.
 Provide a default value for the released property if it is missing.
 Assign the return value of the function to the innerHTML property of the DOM element with the class of game-container. */
+
+function createGames(lists)
+    {
+    { for (let i = 0; i < lists.length; i++) 
+        console.log(lists[i]);
+    }}
+
+const gameContainer = document.querySelector(".game-container");
+
+gameContainer.innerHTML = createGames(games);
